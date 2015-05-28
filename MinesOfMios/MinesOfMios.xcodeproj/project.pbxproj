@@ -12,11 +12,83 @@
 		F73C2E0E1B16DAAC00BD358B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F73C2E0C1B16DAAC00BD358B /* Main.storyboard */; };
 		F73C2E101B16DAAC00BD358B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F73C2E0F1B16DAAC00BD358B /* Images.xcassets */; };
 		F73C2E131B16DAAC00BD358B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F73C2E111B16DAAC00BD358B /* LaunchScreen.xib */; };
-		F73C2E1F1B16DAAC00BD358B /* MinesOfMiosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73C2E1E1B16DAAC00BD358B /* MinesOfMiosTests.swift */; };
+		F73C2E671B16E22200BD358B /* Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73C2E661B16E22200BD358B /* Specs.swift */; };
+		F73C2E6D1B16E22E00BD358B /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F73C2E551B16E18B00BD358B /* Nimble.framework */; };
+		F73C2E6E1B16E22E00BD358B /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F73C2E481B16E16400BD358B /* Quick.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		F73C2E191B16DAAC00BD358B /* PBXContainerItemProxy */ = {
+		F73C2E411B16E16400BD358B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F73C2E381B16E16400BD358B /* Quick.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DAEB6B8E1943873100289F44;
+			remoteInfo = "Quick-OSX";
+		};
+		F73C2E431B16E16400BD358B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F73C2E381B16E16400BD358B /* Quick.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DAEB6B991943873100289F44;
+			remoteInfo = "Quick-OSXTests";
+		};
+		F73C2E451B16E16400BD358B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F73C2E381B16E16400BD358B /* Quick.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DA5663E81A4C8D8500193C88;
+			remoteInfo = "QuickFocused-OSXTests";
+		};
+		F73C2E471B16E16400BD358B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F73C2E381B16E16400BD358B /* Quick.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5A5D117C19473F2100F6D13D;
+			remoteInfo = "Quick-iOS";
+		};
+		F73C2E491B16E16400BD358B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F73C2E381B16E16400BD358B /* Quick.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5A5D118619473F2100F6D13D;
+			remoteInfo = "Quick-iOSTests";
+		};
+		F73C2E4B1B16E16400BD358B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F73C2E381B16E16400BD358B /* Quick.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DA9876B21A4C70EB0004AA17;
+			remoteInfo = "QuickFocused-iOSTests";
+		};
+		F73C2E541B16E18B00BD358B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F73C2E4D1B16E18A00BD358B /* Nimble.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F1A74291940169200FFFC47;
+			remoteInfo = "Nimble-iOS";
+		};
+		F73C2E561B16E18B00BD358B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F73C2E4D1B16E18A00BD358B /* Nimble.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F1A74341940169200FFFC47;
+			remoteInfo = "Nimble-iOSTests";
+		};
+		F73C2E581B16E18B00BD358B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F73C2E4D1B16E18A00BD358B /* Nimble.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F925EAD195C0D6300ED456B;
+			remoteInfo = "Nimble-OSX";
+		};
+		F73C2E5A1B16E18B00BD358B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F73C2E4D1B16E18A00BD358B /* Nimble.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F925EB7195C0D6300ED456B;
+			remoteInfo = "Nimble-OSXTests";
+		};
+		F73C2E681B16E22200BD358B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F73C2DFB1B16DAAC00BD358B /* Project object */;
 			proxyType = 1;
@@ -33,9 +105,11 @@
 		F73C2E0D1B16DAAC00BD358B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F73C2E0F1B16DAAC00BD358B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F73C2E121B16DAAC00BD358B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		F73C2E181B16DAAC00BD358B /* MinesOfMiosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MinesOfMiosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F73C2E1D1B16DAAC00BD358B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F73C2E1E1B16DAAC00BD358B /* MinesOfMiosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinesOfMiosTests.swift; sourceTree = "<group>"; };
+		F73C2E381B16E16400BD358B /* Quick.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Quick.xcodeproj; path = Quick/Quick.xcodeproj; sourceTree = "<group>"; };
+		F73C2E4D1B16E18A00BD358B /* Nimble.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Nimble.xcodeproj; path = Quick/Externals/Nimble/Nimble.xcodeproj; sourceTree = "<group>"; };
+		F73C2E621B16E22200BD358B /* Specs.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Specs.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F73C2E651B16E22200BD358B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F73C2E661B16E22200BD358B /* Specs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Specs.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,10 +120,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F73C2E151B16DAAC00BD358B /* Frameworks */ = {
+		F73C2E5F1B16E22200BD358B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F73C2E6D1B16E22E00BD358B /* Nimble.framework in Frameworks */,
+				F73C2E6E1B16E22E00BD358B /* Quick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,8 +135,9 @@
 		F73C2DFA1B16DAAC00BD358B = {
 			isa = PBXGroup;
 			children = (
+				F73C2E281B16E13300BD358B /* Externals */,
 				F73C2E051B16DAAC00BD358B /* MinesOfMios */,
-				F73C2E1B1B16DAAC00BD358B /* Specs */,
+				F73C2E631B16E22200BD358B /* Specs */,
 				F73C2E041B16DAAC00BD358B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -69,7 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				F73C2E031B16DAAC00BD358B /* MinesOfMios.app */,
-				F73C2E181B16DAAC00BD358B /* MinesOfMiosTests.xctest */,
+				F73C2E621B16E22200BD358B /* Specs.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,19 +172,52 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		F73C2E1B1B16DAAC00BD358B /* Specs */ = {
+		F73C2E281B16E13300BD358B /* Externals */ = {
 			isa = PBXGroup;
 			children = (
-				F73C2E1E1B16DAAC00BD358B /* MinesOfMiosTests.swift */,
-				F73C2E1C1B16DAAC00BD358B /* Supporting Files */,
+				F73C2E4D1B16E18A00BD358B /* Nimble.xcodeproj */,
+				F73C2E381B16E16400BD358B /* Quick.xcodeproj */,
+			);
+			path = Externals;
+			sourceTree = "<group>";
+		};
+		F73C2E391B16E16400BD358B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F73C2E421B16E16400BD358B /* Quick.framework */,
+				F73C2E441B16E16400BD358B /* Quick-OSXTests.xctest */,
+				F73C2E461B16E16400BD358B /* QuickFocused-OSXTests.xctest */,
+				F73C2E481B16E16400BD358B /* Quick.framework */,
+				F73C2E4A1B16E16400BD358B /* Quick-iOSTests.xctest */,
+				F73C2E4C1B16E16400BD358B /* QuickFocused-iOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F73C2E4E1B16E18A00BD358B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F73C2E551B16E18B00BD358B /* Nimble.framework */,
+				F73C2E571B16E18B00BD358B /* NimbleTests.xctest */,
+				F73C2E591B16E18B00BD358B /* Nimble.framework */,
+				F73C2E5B1B16E18B00BD358B /* NimbleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F73C2E631B16E22200BD358B /* Specs */ = {
+			isa = PBXGroup;
+			children = (
+				F73C2E661B16E22200BD358B /* Specs.swift */,
+				F73C2E641B16E22200BD358B /* Supporting Files */,
 			);
 			path = Specs;
 			sourceTree = "<group>";
 		};
-		F73C2E1C1B16DAAC00BD358B /* Supporting Files */ = {
+		F73C2E641B16E22200BD358B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				F73C2E1D1B16DAAC00BD358B /* Info.plist */,
+				F73C2E651B16E22200BD358B /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -132,22 +242,22 @@
 			productReference = F73C2E031B16DAAC00BD358B /* MinesOfMios.app */;
 			productType = "com.apple.product-type.application";
 		};
-		F73C2E171B16DAAC00BD358B /* MinesOfMiosTests */ = {
+		F73C2E611B16E22200BD358B /* Specs */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F73C2E251B16DAAC00BD358B /* Build configuration list for PBXNativeTarget "MinesOfMiosTests" */;
+			buildConfigurationList = F73C2E6A1B16E22200BD358B /* Build configuration list for PBXNativeTarget "Specs" */;
 			buildPhases = (
-				F73C2E141B16DAAC00BD358B /* Sources */,
-				F73C2E151B16DAAC00BD358B /* Frameworks */,
-				F73C2E161B16DAAC00BD358B /* Resources */,
+				F73C2E5E1B16E22200BD358B /* Sources */,
+				F73C2E5F1B16E22200BD358B /* Frameworks */,
+				F73C2E601B16E22200BD358B /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				F73C2E1A1B16DAAC00BD358B /* PBXTargetDependency */,
+				F73C2E691B16E22200BD358B /* PBXTargetDependency */,
 			);
-			name = MinesOfMiosTests;
-			productName = MinesOfMiosTests;
-			productReference = F73C2E181B16DAAC00BD358B /* MinesOfMiosTests.xctest */;
+			name = Specs;
+			productName = Specs;
+			productReference = F73C2E621B16E22200BD358B /* Specs.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -162,7 +272,7 @@
 					F73C2E021B16DAAC00BD358B = {
 						CreatedOnToolsVersion = 6.3;
 					};
-					F73C2E171B16DAAC00BD358B = {
+					F73C2E611B16E22200BD358B = {
 						CreatedOnToolsVersion = 6.3;
 						TestTargetID = F73C2E021B16DAAC00BD358B;
 					};
@@ -179,13 +289,96 @@
 			mainGroup = F73C2DFA1B16DAAC00BD358B;
 			productRefGroup = F73C2E041B16DAAC00BD358B /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = F73C2E4E1B16E18A00BD358B /* Products */;
+					ProjectRef = F73C2E4D1B16E18A00BD358B /* Nimble.xcodeproj */;
+				},
+				{
+					ProductGroup = F73C2E391B16E16400BD358B /* Products */;
+					ProjectRef = F73C2E381B16E16400BD358B /* Quick.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				F73C2E021B16DAAC00BD358B /* MinesOfMios */,
-				F73C2E171B16DAAC00BD358B /* MinesOfMiosTests */,
+				F73C2E611B16E22200BD358B /* Specs */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		F73C2E421B16E16400BD358B /* Quick.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Quick.framework;
+			remoteRef = F73C2E411B16E16400BD358B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F73C2E441B16E16400BD358B /* Quick-OSXTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Quick-OSXTests.xctest";
+			remoteRef = F73C2E431B16E16400BD358B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F73C2E461B16E16400BD358B /* QuickFocused-OSXTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "QuickFocused-OSXTests.xctest";
+			remoteRef = F73C2E451B16E16400BD358B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F73C2E481B16E16400BD358B /* Quick.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Quick.framework;
+			remoteRef = F73C2E471B16E16400BD358B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F73C2E4A1B16E16400BD358B /* Quick-iOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Quick-iOSTests.xctest";
+			remoteRef = F73C2E491B16E16400BD358B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F73C2E4C1B16E16400BD358B /* QuickFocused-iOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "QuickFocused-iOSTests.xctest";
+			remoteRef = F73C2E4B1B16E16400BD358B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F73C2E551B16E18B00BD358B /* Nimble.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Nimble.framework;
+			remoteRef = F73C2E541B16E18B00BD358B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F73C2E571B16E18B00BD358B /* NimbleTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = NimbleTests.xctest;
+			remoteRef = F73C2E561B16E18B00BD358B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F73C2E591B16E18B00BD358B /* Nimble.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Nimble.framework;
+			remoteRef = F73C2E581B16E18B00BD358B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F73C2E5B1B16E18B00BD358B /* NimbleTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = NimbleTests.xctest;
+			remoteRef = F73C2E5A1B16E18B00BD358B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		F73C2E011B16DAAC00BD358B /* Resources */ = {
@@ -198,7 +391,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F73C2E161B16DAAC00BD358B /* Resources */ = {
+		F73C2E601B16E22200BD358B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -217,21 +410,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F73C2E141B16DAAC00BD358B /* Sources */ = {
+		F73C2E5E1B16E22200BD358B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F73C2E1F1B16DAAC00BD358B /* MinesOfMiosTests.swift in Sources */,
+				F73C2E671B16E22200BD358B /* Specs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		F73C2E1A1B16DAAC00BD358B /* PBXTargetDependency */ = {
+		F73C2E691B16E22200BD358B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = F73C2E021B16DAAC00BD358B /* MinesOfMios */;
-			targetProxy = F73C2E191B16DAAC00BD358B /* PBXContainerItemProxy */;
+			targetProxy = F73C2E681B16E22200BD358B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -358,7 +551,7 @@
 			};
 			name = Release;
 		};
-		F73C2E261B16DAAC00BD358B /* Debug */ = {
+		F73C2E6B1B16E22200BD358B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -370,14 +563,14 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = MinesOfMiosTests/Info.plist;
+				INFOPLIST_FILE = Specs/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MinesOfMios.app/MinesOfMios";
 			};
 			name = Debug;
 		};
-		F73C2E271B16DAAC00BD358B /* Release */ = {
+		F73C2E6C1B16E22200BD358B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -385,7 +578,7 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = MinesOfMiosTests/Info.plist;
+				INFOPLIST_FILE = Specs/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MinesOfMios.app/MinesOfMios";
@@ -411,12 +604,13 @@
 				F73C2E241B16DAAC00BD358B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		F73C2E251B16DAAC00BD358B /* Build configuration list for PBXNativeTarget "MinesOfMiosTests" */ = {
+		F73C2E6A1B16E22200BD358B /* Build configuration list for PBXNativeTarget "Specs" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F73C2E261B16DAAC00BD358B /* Debug */,
-				F73C2E271B16DAAC00BD358B /* Release */,
+				F73C2E6B1B16E22200BD358B /* Debug */,
+				F73C2E6C1B16E22200BD358B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

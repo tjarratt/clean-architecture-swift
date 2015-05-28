@@ -1,0 +1,6 @@
+[submodule "MinesOfMios/Externals/Quick"]
+	path = MinesOfMios/Externals/Quick
+	url = https://github.com/quick/quick.git
+[submodule "MinesOfMios/Externals/Nimble"]
+	path = MinesOfMios/Externals/Nimble
+	url = https://github.com/quick/nimble.git
