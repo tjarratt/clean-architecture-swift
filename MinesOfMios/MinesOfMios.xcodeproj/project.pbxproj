@@ -8,13 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		F73C2E091B16DAAC00BD358B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73C2E081B16DAAC00BD358B /* AppDelegate.swift */; };
-		F73C2E0B1B16DAAC00BD358B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73C2E0A1B16DAAC00BD358B /* ViewController.swift */; };
+		F73C2E0B1B16DAAC00BD358B /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73C2E0A1B16DAAC00BD358B /* RootViewController.swift */; };
 		F73C2E0E1B16DAAC00BD358B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F73C2E0C1B16DAAC00BD358B /* Main.storyboard */; };
 		F73C2E101B16DAAC00BD358B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F73C2E0F1B16DAAC00BD358B /* Images.xcassets */; };
 		F73C2E131B16DAAC00BD358B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F73C2E111B16DAAC00BD358B /* LaunchScreen.xib */; };
-		F73C2E671B16E22200BD358B /* Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73C2E661B16E22200BD358B /* Specs.swift */; };
+		F73C2E671B16E22200BD358B /* RootViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73C2E661B16E22200BD358B /* RootViewControllerSpec.swift */; };
 		F73C2E6D1B16E22E00BD358B /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F73C2E551B16E18B00BD358B /* Nimble.framework */; };
 		F73C2E6E1B16E22E00BD358B /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F73C2E481B16E16400BD358B /* Quick.framework */; };
+		F73C2E721B16FBA500BD358B /* Script.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73C2E711B16FBA500BD358B /* Script.swift */; };
+		F73C2E741B16FC4D00BD358B /* ScriptSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73C2E731B16FC4D00BD358B /* ScriptSpec.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,7 +103,7 @@
 		F73C2E031B16DAAC00BD358B /* MinesOfMios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MinesOfMios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F73C2E071B16DAAC00BD358B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F73C2E081B16DAAC00BD358B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F73C2E0A1B16DAAC00BD358B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F73C2E0A1B16DAAC00BD358B /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		F73C2E0D1B16DAAC00BD358B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F73C2E0F1B16DAAC00BD358B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F73C2E121B16DAAC00BD358B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -109,7 +111,9 @@
 		F73C2E4D1B16E18A00BD358B /* Nimble.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Nimble.xcodeproj; path = Quick/Externals/Nimble/Nimble.xcodeproj; sourceTree = "<group>"; };
 		F73C2E621B16E22200BD358B /* Specs.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Specs.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F73C2E651B16E22200BD358B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F73C2E661B16E22200BD358B /* Specs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Specs.swift; sourceTree = "<group>"; };
+		F73C2E661B16E22200BD358B /* RootViewControllerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewControllerSpec.swift; sourceTree = "<group>"; };
+		F73C2E711B16FBA500BD358B /* Script.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Script.swift; sourceTree = "<group>"; };
+		F73C2E731B16FC4D00BD358B /* ScriptSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScriptSpec.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,11 +158,8 @@
 		F73C2E051B16DAAC00BD358B /* MinesOfMios */ = {
 			isa = PBXGroup;
 			children = (
-				F73C2E081B16DAAC00BD358B /* AppDelegate.swift */,
-				F73C2E0A1B16DAAC00BD358B /* ViewController.swift */,
-				F73C2E0C1B16DAAC00BD358B /* Main.storyboard */,
-				F73C2E0F1B16DAAC00BD358B /* Images.xcassets */,
-				F73C2E111B16DAAC00BD358B /* LaunchScreen.xib */,
+				F73C2E701B16FB6E00BD358B /* UI */,
+				F73C2E6F1B16FB6900BD358B /* Domain */,
 				F73C2E061B16DAAC00BD358B /* Supporting Files */,
 			);
 			path = MinesOfMios;
@@ -167,6 +168,8 @@
 		F73C2E061B16DAAC00BD358B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F73C2E0F1B16DAAC00BD358B /* Images.xcassets */,
+				F73C2E111B16DAAC00BD358B /* LaunchScreen.xib */,
 				F73C2E071B16DAAC00BD358B /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -208,7 +211,8 @@
 		F73C2E631B16E22200BD358B /* Specs */ = {
 			isa = PBXGroup;
 			children = (
-				F73C2E661B16E22200BD358B /* Specs.swift */,
+				F73C2E661B16E22200BD358B /* RootViewControllerSpec.swift */,
+				F73C2E731B16FC4D00BD358B /* ScriptSpec.swift */,
 				F73C2E641B16E22200BD358B /* Supporting Files */,
 			);
 			path = Specs;
@@ -220,6 +224,24 @@
 				F73C2E651B16E22200BD358B /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F73C2E6F1B16FB6900BD358B /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				F73C2E711B16FBA500BD358B /* Script.swift */,
+			);
+			name = Domain;
+			sourceTree = "<group>";
+		};
+		F73C2E701B16FB6E00BD358B /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				F73C2E081B16DAAC00BD358B /* AppDelegate.swift */,
+				F73C2E0A1B16DAAC00BD358B /* RootViewController.swift */,
+				F73C2E0C1B16DAAC00BD358B /* Main.storyboard */,
+			);
+			name = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -405,7 +427,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F73C2E0B1B16DAAC00BD358B /* ViewController.swift in Sources */,
+				F73C2E0B1B16DAAC00BD358B /* RootViewController.swift in Sources */,
+				F73C2E721B16FBA500BD358B /* Script.swift in Sources */,
 				F73C2E091B16DAAC00BD358B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,7 +437,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F73C2E671B16E22200BD358B /* Specs.swift in Sources */,
+				F73C2E741B16FC4D00BD358B /* ScriptSpec.swift in Sources */,
+				F73C2E671B16E22200BD358B /* RootViewControllerSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -613,6 +637,7 @@
 				F73C2E6C1B16E22200BD358B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
