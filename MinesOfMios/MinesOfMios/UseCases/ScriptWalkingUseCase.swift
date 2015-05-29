@@ -4,12 +4,12 @@ public protocol ScriptObserver {
     func displayMessage(String)
 }
 
-public protocol ScriptCoordinator {
+public protocol ScriptWalkingUseCase {
     func start()
     func acknowledge()
 }
 
-public class Script : ScriptCoordinator {
+public class ScriptUseCase : ScriptWalkingUseCase {
 
     public var observer : ScriptObserver
     private var messages : Array<String>

@@ -8,14 +8,14 @@ class RootViewControllerSpec: QuickSpec {
     override func spec() {
         describe("a spec") {
             var subject : RootViewController!
-            var scriptCoordinator : FakeScriptCoordinator!
+            var useCase : FakeScriptWalkingUseCase!
 
             beforeEach {
-                scriptCoordinator = FakeScriptCoordinator()
+                useCase = FakeScriptWalkingUseCase()
 
                 var storyboard = UIStoryboard(name: "Main", bundle: nil)
                 subject = storyboard.instantiateInitialViewController() as! RootViewController
-                subject.scriptCoordinator = scriptCoordinator
+                subject.scriptUseCase = useCase
 
                 expect(subject.view).toNot(beNil())
             }
@@ -31,7 +31,7 @@ class RootViewControllerSpec: QuickSpec {
             }
 
             it("should start displaying messages from the script") {
-                expect(scriptCoordinator.started).to(beTrue())
+                expect(useCase.started).to(beTrue())
             }
 
             describe("displaying messages from the script") {
@@ -50,7 +50,7 @@ class RootViewControllerSpec: QuickSpec {
                 }
 
                 it("should acknowledge the last message from the script coordinator") {
-                    expect(scriptCoordinator.acknowledgedCount).to(equal(1))
+                    expect(useCase.acknowledgedCount).to(equal(1))
                 }
             }
         }

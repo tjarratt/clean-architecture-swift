@@ -9,16 +9,16 @@
 /* Begin PBXBuildFile section */
 		F73C2E091B16DAAC00BD358B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73C2E081B16DAAC00BD358B /* AppDelegate.swift */; };
 		F73C2E0B1B16DAAC00BD358B /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73C2E0A1B16DAAC00BD358B /* RootViewController.swift */; };
-		F73C2E0E1B16DAAC00BD358B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F73C2E0C1B16DAAC00BD358B /* Main.storyboard */; };
 		F73C2E101B16DAAC00BD358B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F73C2E0F1B16DAAC00BD358B /* Images.xcassets */; };
-		F73C2E131B16DAAC00BD358B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F73C2E111B16DAAC00BD358B /* LaunchScreen.xib */; };
 		F73C2E6D1B16E22E00BD358B /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F73C2E551B16E18B00BD358B /* Nimble.framework */; };
 		F73C2E6E1B16E22E00BD358B /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F73C2E481B16E16400BD358B /* Quick.framework */; };
-		F73C2E721B16FBA500BD358B /* Script.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73C2E711B16FBA500BD358B /* Script.swift */; };
 		F7B558841B1836A00079CD22 /* RootViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B558831B1836A00079CD22 /* RootViewControllerSpec.swift */; };
 		F7B558861B1836A90079CD22 /* ScriptSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B558851B1836A90079CD22 /* ScriptSpec.swift */; };
 		F7B558891B1836EA0079CD22 /* FakeScriptCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B558881B1836EA0079CD22 /* FakeScriptCoordinator.swift */; };
 		F7B5588B1B1837290079CD22 /* FakeUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B5588A1B1837290079CD22 /* FakeUI.swift */; };
+		F7B5588F1B183F0C0079CD22 /* ScriptWalkingUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B5588E1B183F0C0079CD22 /* ScriptWalkingUseCase.swift */; };
+		F7B558941B183F700079CD22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F73C2E0C1B16DAAC00BD358B /* Main.storyboard */; };
+		F7B558961B183F7E0079CD22 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7B558901B183F290079CD22 /* LaunchScreen.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,16 +108,16 @@
 		F73C2E0A1B16DAAC00BD358B /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		F73C2E0D1B16DAAC00BD358B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F73C2E0F1B16DAAC00BD358B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		F73C2E121B16DAAC00BD358B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		F73C2E381B16E16400BD358B /* Quick.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Quick.xcodeproj; path = Quick/Quick.xcodeproj; sourceTree = "<group>"; };
 		F73C2E4D1B16E18A00BD358B /* Nimble.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Nimble.xcodeproj; path = Quick/Externals/Nimble/Nimble.xcodeproj; sourceTree = "<group>"; };
 		F73C2E621B16E22200BD358B /* Specs.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Specs.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F73C2E651B16E22200BD358B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F73C2E711B16FBA500BD358B /* Script.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Script.swift; sourceTree = "<group>"; };
 		F7B558831B1836A00079CD22 /* RootViewControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewControllerSpec.swift; sourceTree = "<group>"; };
 		F7B558851B1836A90079CD22 /* ScriptSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScriptSpec.swift; sourceTree = "<group>"; };
 		F7B558881B1836EA0079CD22 /* FakeScriptCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeScriptCoordinator.swift; sourceTree = "<group>"; };
 		F7B5588A1B1837290079CD22 /* FakeUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeUI.swift; sourceTree = "<group>"; };
+		F7B5588E1B183F0C0079CD22 /* ScriptWalkingUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScriptWalkingUseCase.swift; sourceTree = "<group>"; };
+		F7B558911B183F290079CD22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,7 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				F73C2E701B16FB6E00BD358B /* UI */,
-				F73C2E6F1B16FB6900BD358B /* Domain */,
+				F73C2E6F1B16FB6900BD358B /* UseCases */,
 				F73C2E061B16DAAC00BD358B /* Supporting Files */,
 			);
 			path = MinesOfMios;
@@ -173,10 +173,10 @@
 			isa = PBXGroup;
 			children = (
 				F73C2E0F1B16DAAC00BD358B /* Images.xcassets */,
-				F73C2E111B16DAAC00BD358B /* LaunchScreen.xib */,
 				F73C2E071B16DAAC00BD358B /* Info.plist */,
 			);
 			name = "Supporting Files";
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 		F73C2E281B16E13300BD358B /* Externals */ = {
@@ -231,22 +231,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		F73C2E6F1B16FB6900BD358B /* Domain */ = {
+		F73C2E6F1B16FB6900BD358B /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
-				F73C2E711B16FBA500BD358B /* Script.swift */,
+				F7B5588E1B183F0C0079CD22 /* ScriptWalkingUseCase.swift */,
 			);
-			name = Domain;
+			path = UseCases;
 			sourceTree = "<group>";
 		};
 		F73C2E701B16FB6E00BD358B /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				F7B558901B183F290079CD22 /* LaunchScreen.xib */,
 				F73C2E081B16DAAC00BD358B /* AppDelegate.swift */,
 				F73C2E0A1B16DAAC00BD358B /* RootViewController.swift */,
 				F73C2E0C1B16DAAC00BD358B /* Main.storyboard */,
 			);
-			name = UI;
+			path = UI;
 			sourceTree = "<group>";
 		};
 		F7B558811B18366A0079CD22 /* UI */ = {
@@ -437,8 +438,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F73C2E0E1B16DAAC00BD358B /* Main.storyboard in Resources */,
-				F73C2E131B16DAAC00BD358B /* LaunchScreen.xib in Resources */,
+				F7B558961B183F7E0079CD22 /* LaunchScreen.xib in Resources */,
+				F7B558941B183F700079CD22 /* Main.storyboard in Resources */,
 				F73C2E101B16DAAC00BD358B /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -457,8 +458,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7B5588F1B183F0C0079CD22 /* ScriptWalkingUseCase.swift in Sources */,
 				F73C2E0B1B16DAAC00BD358B /* RootViewController.swift in Sources */,
-				F73C2E721B16FBA500BD358B /* Script.swift in Sources */,
 				F73C2E091B16DAAC00BD358B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -493,10 +494,10 @@
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		F73C2E111B16DAAC00BD358B /* LaunchScreen.xib */ = {
+		F7B558901B183F290079CD22 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F73C2E121B16DAAC00BD358B /* Base */,
+				F7B558911B183F290079CD22 /* Base */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
@@ -590,7 +591,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEFINES_MODULE = YES;
-				INFOPLIST_FILE = MinesOfMios/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MinesOfMios/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -601,7 +602,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEFINES_MODULE = YES;
-				INFOPLIST_FILE = MinesOfMios/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MinesOfMios/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

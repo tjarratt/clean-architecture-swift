@@ -4,11 +4,11 @@ public class RootViewController: UIViewController, ScriptObserver {
 
     @IBOutlet public weak var label: UILabel!
     @IBOutlet public weak var breathe: UIButton!
-    public var scriptCoordinator: ScriptCoordinator?
+    public var scriptUseCase: ScriptWalkingUseCase?
 
     override public func viewDidLoad() {
         super.viewDidLoad()
-        self.scriptCoordinator?.start()
+        self.scriptUseCase?.start()
     }
 
     public func displayMessage(message: String) {
@@ -16,7 +16,7 @@ public class RootViewController: UIViewController, ScriptObserver {
     }
 
     @IBAction public func userDidTapButton(sender: UIButton?) {
-        self.scriptCoordinator?.acknowledge()
+        self.scriptUseCase?.acknowledge()
     }
 }
 
