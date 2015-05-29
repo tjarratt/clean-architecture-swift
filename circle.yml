@@ -1,0 +1,8 @@
+checkout:
+  post:
+    - git submodule sync
+    - git submodule update --init --recursive
+
+machine:
+  xcode:
+    version: "6.3.1"
