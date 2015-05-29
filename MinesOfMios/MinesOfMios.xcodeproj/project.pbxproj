@@ -12,11 +12,13 @@
 		F73C2E0E1B16DAAC00BD358B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F73C2E0C1B16DAAC00BD358B /* Main.storyboard */; };
 		F73C2E101B16DAAC00BD358B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F73C2E0F1B16DAAC00BD358B /* Images.xcassets */; };
 		F73C2E131B16DAAC00BD358B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F73C2E111B16DAAC00BD358B /* LaunchScreen.xib */; };
-		F73C2E671B16E22200BD358B /* RootViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73C2E661B16E22200BD358B /* RootViewControllerSpec.swift */; };
 		F73C2E6D1B16E22E00BD358B /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F73C2E551B16E18B00BD358B /* Nimble.framework */; };
 		F73C2E6E1B16E22E00BD358B /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F73C2E481B16E16400BD358B /* Quick.framework */; };
 		F73C2E721B16FBA500BD358B /* Script.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73C2E711B16FBA500BD358B /* Script.swift */; };
-		F73C2E741B16FC4D00BD358B /* ScriptSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73C2E731B16FC4D00BD358B /* ScriptSpec.swift */; };
+		F7B558841B1836A00079CD22 /* RootViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B558831B1836A00079CD22 /* RootViewControllerSpec.swift */; };
+		F7B558861B1836A90079CD22 /* ScriptSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B558851B1836A90079CD22 /* ScriptSpec.swift */; };
+		F7B558891B1836EA0079CD22 /* FakeScriptCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B558881B1836EA0079CD22 /* FakeScriptCoordinator.swift */; };
+		F7B5588B1B1837290079CD22 /* FakeUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B5588A1B1837290079CD22 /* FakeUI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,9 +113,11 @@
 		F73C2E4D1B16E18A00BD358B /* Nimble.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Nimble.xcodeproj; path = Quick/Externals/Nimble/Nimble.xcodeproj; sourceTree = "<group>"; };
 		F73C2E621B16E22200BD358B /* Specs.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Specs.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F73C2E651B16E22200BD358B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F73C2E661B16E22200BD358B /* RootViewControllerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewControllerSpec.swift; sourceTree = "<group>"; };
 		F73C2E711B16FBA500BD358B /* Script.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Script.swift; sourceTree = "<group>"; };
-		F73C2E731B16FC4D00BD358B /* ScriptSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScriptSpec.swift; sourceTree = "<group>"; };
+		F7B558831B1836A00079CD22 /* RootViewControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewControllerSpec.swift; sourceTree = "<group>"; };
+		F7B558851B1836A90079CD22 /* ScriptSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScriptSpec.swift; sourceTree = "<group>"; };
+		F7B558881B1836EA0079CD22 /* FakeScriptCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeScriptCoordinator.swift; sourceTree = "<group>"; };
+		F7B5588A1B1837290079CD22 /* FakeUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeUI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,9 +215,10 @@
 		F73C2E631B16E22200BD358B /* Specs */ = {
 			isa = PBXGroup;
 			children = (
-				F73C2E661B16E22200BD358B /* RootViewControllerSpec.swift */,
-				F73C2E731B16FC4D00BD358B /* ScriptSpec.swift */,
+				F7B558871B1836C20079CD22 /* Fakes */,
 				F73C2E641B16E22200BD358B /* Supporting Files */,
+				F7B558811B18366A0079CD22 /* UI */,
+				F7B558821B18366F0079CD22 /* UseCases */,
 			);
 			path = Specs;
 			sourceTree = "<group>";
@@ -242,6 +247,31 @@
 				F73C2E0C1B16DAAC00BD358B /* Main.storyboard */,
 			);
 			name = UI;
+			sourceTree = "<group>";
+		};
+		F7B558811B18366A0079CD22 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				F7B558831B1836A00079CD22 /* RootViewControllerSpec.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		F7B558821B18366F0079CD22 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				F7B558851B1836A90079CD22 /* ScriptSpec.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		F7B558871B1836C20079CD22 /* Fakes */ = {
+			isa = PBXGroup;
+			children = (
+				F7B558881B1836EA0079CD22 /* FakeScriptCoordinator.swift */,
+				F7B5588A1B1837290079CD22 /* FakeUI.swift */,
+			);
+			path = Fakes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -437,8 +467,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F73C2E741B16FC4D00BD358B /* ScriptSpec.swift in Sources */,
-				F73C2E671B16E22200BD358B /* RootViewControllerSpec.swift in Sources */,
+				F7B5588B1B1837290079CD22 /* FakeUI.swift in Sources */,
+				F7B558841B1836A00079CD22 /* RootViewControllerSpec.swift in Sources */,
+				F7B558891B1836EA0079CD22 /* FakeScriptCoordinator.swift in Sources */,
+				F7B558861B1836A90079CD22 /* ScriptSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

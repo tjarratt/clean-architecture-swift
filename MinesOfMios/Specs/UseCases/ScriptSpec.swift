@@ -4,26 +4,14 @@ import Quick
 import Nimble
 import MinesOfMios
 
-class FakeScriptObserver : ScriptObserver {
-    var lastMessageReceived : String = ""
-
-    func displayMessage(arg: String) {
-        self.lastMessageReceived = arg
-    }
-
-    func lastMessage() -> String {
-        return self.lastMessageReceived
-    }
-}
-
 
 class ScriptSpec: QuickSpec {
     override func spec() {
         var script : Script!
-        var observer : FakeScriptObserver!
+        var observer : FakeUI!
 
         beforeEach {
-            observer = FakeScriptObserver()
+            observer = FakeUI()
             script = Script(observer: observer, messages: ["one", "two", "three"])
         }
 
