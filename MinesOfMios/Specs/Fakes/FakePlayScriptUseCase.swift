@@ -1,6 +1,6 @@
 import MinesOfMios
 
-public class FakeScriptWalkingUseCase : ScriptWalkingUseCase {
+public class FakePlayScriptUseCase : PlayScriptUseCase {
     public var started : Bool = false
     public var acknowledgedCount : Int = 0
 

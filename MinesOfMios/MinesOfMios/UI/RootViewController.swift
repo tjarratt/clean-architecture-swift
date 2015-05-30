@@ -4,7 +4,7 @@ public class RootViewController: UIViewController, ScriptObserver {
 
     @IBOutlet public weak var label: UILabel!
     @IBOutlet public weak var breathe: UIButton!
-    public var scriptUseCase: ScriptWalkingUseCase?
+    public var scriptUseCase: PlayScriptUseCase?
 
     override public func viewDidLoad() {
         super.viewDidLoad()

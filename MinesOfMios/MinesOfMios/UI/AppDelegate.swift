@@ -13,8 +13,8 @@ public class AppDelegate: UIResponder, UIApplicationDelegate {
             "Your arm is pinned, but you can hear rumbling noises in the distance",
         ]
 
-        var scriptUseCase : ScriptWalkingUseCase = ScriptUseCase(observer: rootViewController, messages: messages)
-        rootViewController.scriptUseCase = scriptUseCase
+        var script = Script(messages: messages)
+        rootViewController.scriptUseCase = ScriptUseCase(observer: rootViewController, script: script)
         return true
     }
 }

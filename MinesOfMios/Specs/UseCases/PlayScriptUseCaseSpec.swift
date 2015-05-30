@@ -5,14 +5,14 @@ import Nimble
 import MinesOfMios
 
 
-class ScriptSpec: QuickSpec {
+class PlayScriptUseCaseSpec: QuickSpec {
     override func spec() {
         var script : ScriptUseCase!
         var observer : FakeUI!
 
         beforeEach {
             observer = FakeUI()
-            script = ScriptUseCase(observer: observer, messages: ["one", "two", "three"])
+            script = ScriptUseCase(observer: observer, script: Script(messages: ["one", "two", "three"]))
         }
 
         context("when the script is started") {

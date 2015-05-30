@@ -8,10 +8,10 @@ class RootViewControllerSpec: QuickSpec {
     override func spec() {
         describe("a spec") {
             var subject : RootViewController!
-            var useCase : FakeScriptWalkingUseCase!
+            var useCase : FakePlayScriptUseCase!
 
             beforeEach {
-                useCase = FakeScriptWalkingUseCase()
+                useCase = FakePlayScriptUseCase()
 
                 var storyboard = UIStoryboard(name: "Main", bundle: nil)
                 subject = storyboard.instantiateInitialViewController() as! RootViewController

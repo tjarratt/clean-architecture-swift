@@ -13,12 +13,13 @@
 		F73C2E6D1B16E22E00BD358B /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F73C2E551B16E18B00BD358B /* Nimble.framework */; };
 		F73C2E6E1B16E22E00BD358B /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F73C2E481B16E16400BD358B /* Quick.framework */; };
 		F7B558841B1836A00079CD22 /* RootViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B558831B1836A00079CD22 /* RootViewControllerSpec.swift */; };
-		F7B558861B1836A90079CD22 /* ScriptSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B558851B1836A90079CD22 /* ScriptSpec.swift */; };
-		F7B558891B1836EA0079CD22 /* FakeScriptCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B558881B1836EA0079CD22 /* FakeScriptCoordinator.swift */; };
+		F7B558861B1836A90079CD22 /* PlayScriptUseCaseSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B558851B1836A90079CD22 /* PlayScriptUseCaseSpec.swift */; };
+		F7B558891B1836EA0079CD22 /* FakePlayScriptUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B558881B1836EA0079CD22 /* FakePlayScriptUseCase.swift */; };
 		F7B5588B1B1837290079CD22 /* FakeUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B5588A1B1837290079CD22 /* FakeUI.swift */; };
-		F7B5588F1B183F0C0079CD22 /* ScriptWalkingUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B5588E1B183F0C0079CD22 /* ScriptWalkingUseCase.swift */; };
+		F7B5588F1B183F0C0079CD22 /* PlayScriptUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B5588E1B183F0C0079CD22 /* PlayScriptUseCase.swift */; };
 		F7B558941B183F700079CD22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F73C2E0C1B16DAAC00BD358B /* Main.storyboard */; };
 		F7B558961B183F7E0079CD22 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7B558901B183F290079CD22 /* LaunchScreen.xib */; };
+		F7B558991B1979810079CD22 /* Script.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B558981B1979810079CD22 /* Script.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,11 +114,12 @@
 		F73C2E621B16E22200BD358B /* Specs.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Specs.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F73C2E651B16E22200BD358B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F7B558831B1836A00079CD22 /* RootViewControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewControllerSpec.swift; sourceTree = "<group>"; };
-		F7B558851B1836A90079CD22 /* ScriptSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScriptSpec.swift; sourceTree = "<group>"; };
-		F7B558881B1836EA0079CD22 /* FakeScriptCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeScriptCoordinator.swift; sourceTree = "<group>"; };
+		F7B558851B1836A90079CD22 /* PlayScriptUseCaseSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayScriptUseCaseSpec.swift; sourceTree = "<group>"; };
+		F7B558881B1836EA0079CD22 /* FakePlayScriptUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakePlayScriptUseCase.swift; sourceTree = "<group>"; };
 		F7B5588A1B1837290079CD22 /* FakeUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeUI.swift; sourceTree = "<group>"; };
-		F7B5588E1B183F0C0079CD22 /* ScriptWalkingUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScriptWalkingUseCase.swift; sourceTree = "<group>"; };
+		F7B5588E1B183F0C0079CD22 /* PlayScriptUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayScriptUseCase.swift; sourceTree = "<group>"; };
 		F7B558911B183F290079CD22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		F7B558981B1979810079CD22 /* Script.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Script.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +164,7 @@
 		F73C2E051B16DAAC00BD358B /* MinesOfMios */ = {
 			isa = PBXGroup;
 			children = (
+				F7B558971B19794D0079CD22 /* Entities */,
 				F73C2E701B16FB6E00BD358B /* UI */,
 				F73C2E6F1B16FB6900BD358B /* UseCases */,
 				F73C2E061B16DAAC00BD358B /* Supporting Files */,
@@ -234,7 +237,7 @@
 		F73C2E6F1B16FB6900BD358B /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
-				F7B5588E1B183F0C0079CD22 /* ScriptWalkingUseCase.swift */,
+				F7B5588E1B183F0C0079CD22 /* PlayScriptUseCase.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -261,7 +264,7 @@
 		F7B558821B18366F0079CD22 /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
-				F7B558851B1836A90079CD22 /* ScriptSpec.swift */,
+				F7B558851B1836A90079CD22 /* PlayScriptUseCaseSpec.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -269,10 +272,18 @@
 		F7B558871B1836C20079CD22 /* Fakes */ = {
 			isa = PBXGroup;
 			children = (
-				F7B558881B1836EA0079CD22 /* FakeScriptCoordinator.swift */,
+				F7B558881B1836EA0079CD22 /* FakePlayScriptUseCase.swift */,
 				F7B5588A1B1837290079CD22 /* FakeUI.swift */,
 			);
 			path = Fakes;
+			sourceTree = "<group>";
+		};
+		F7B558971B19794D0079CD22 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				F7B558981B1979810079CD22 /* Script.swift */,
+			);
+			path = Entities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -458,7 +469,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7B5588F1B183F0C0079CD22 /* ScriptWalkingUseCase.swift in Sources */,
+				F7B558991B1979810079CD22 /* Script.swift in Sources */,
+				F7B5588F1B183F0C0079CD22 /* PlayScriptUseCase.swift in Sources */,
 				F73C2E0B1B16DAAC00BD358B /* RootViewController.swift in Sources */,
 				F73C2E091B16DAAC00BD358B /* AppDelegate.swift in Sources */,
 			);
@@ -470,8 +482,8 @@
 			files = (
 				F7B5588B1B1837290079CD22 /* FakeUI.swift in Sources */,
 				F7B558841B1836A00079CD22 /* RootViewControllerSpec.swift in Sources */,
-				F7B558891B1836EA0079CD22 /* FakeScriptCoordinator.swift in Sources */,
-				F7B558861B1836A90079CD22 /* ScriptSpec.swift in Sources */,
+				F7B558891B1836EA0079CD22 /* FakePlayScriptUseCase.swift in Sources */,
+				F7B558861B1836A90079CD22 /* PlayScriptUseCaseSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
