@@ -330,6 +330,8 @@
 		F73C2DFB1B16DAAC00BD358B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = "General Linear Group";
 				TargetAttributes = {

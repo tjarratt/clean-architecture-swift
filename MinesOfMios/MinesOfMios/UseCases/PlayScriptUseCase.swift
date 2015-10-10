@@ -1,7 +1,7 @@
 import UIKit
 
 public protocol ScriptObserver {
-    func displayMessage(String)
+    func displayMessage(_: String)
 }
 
 public protocol PlayScriptUseCase {
